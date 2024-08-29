@@ -1,0 +1,40 @@
+.hero .container {
+  padding: 200px 100px;
+}
+.hero {
+  position: relative;
+}
+.hero > button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  left: 50px;
+  border-radius: 100px;
+  outline: none;
+  border: none;
+  background-color: #fff4;
+  color: white;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.hero > button.next {
+  left: unset;
+  right: 50px;
+}
+.hero .swiper-slide h1 {
+  margin-top: 20px;
+  font-size: 70px;
+  color: white;
+}
+.hero .swiper-slide p {
+  width: fit-content;
+  font-weight: 700;
+  background-color: #fff;
+  padding: 5px 10px;
+  color: #333;
+}
+.hero .swiper-slide p span {
+  color: #f35525;
+}

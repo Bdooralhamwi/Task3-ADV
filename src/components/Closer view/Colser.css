@@ -1,0 +1,323 @@
+.bablic {
+    /* min-height: 100%; */
+    
+    margin-bottom: 30px;
+    position: relative;
+    min-height: 60vh;
+    /* margin: 30px 0; */
+}
+
+.closer-componant {
+    width: 100%;
+}
+.closer-componant .content {
+    height: 50%;
+    width: 100%;
+    /* background: url("./public/images/property-02.jpg"); */
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+    background-position: center;
+    
+}
+.back {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+}
+.closer-componant .content .blur {
+    padding: 20px 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px);
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.closer-componant .content .blur .container {
+    width: 85%;
+    /* position: absolute; */
+    /* height: 100vh; */
+    /* top: 40px;
+    left: 50%; */
+    /* transform: translateX(-50%); */
+}
+.closer-componant .content .blur .container .up {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    justify-content: space-around;
+    text-align: center;
+} 
+.closer-componant .content .blur .container .up h1 {
+    color: #f57e5a;
+    font-size: 20px;
+    font-weight: bold;
+}
+.closer-componant .content .blur .container .up h2 {
+    font-size: 35px;
+    width: 300px;
+    margin: auto;
+}
+.closer-componant .content .blur .container .center {
+    position: relative;
+    width: 100%;
+    
+}
+.closer-componant .content .blur .container .center img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: relative;
+}
+.closer-componant .content .blur .container .center .play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(245, 126, 90,0.4);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+        cursor: pointer;
+        color: #fff;
+    }
+}
+.closer-componant .content .blur .container .down {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 200px;
+    align-items: center;
+    /* margin-bottom: 500px; */
+}
+.closer-componant .content .blur .container .down .card {
+    position: relative;
+    display: flex;
+    width: 31%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(250, 143, 111, 0.4);
+    padding: 20px;
+}
+.closer-componant .content .blur .container .down .card span {
+    color: #f57e5a;
+    font-size: 33px;
+    font-weight: bolder;
+}
+.closer-componant .content .blur .container .down .card p {
+    font-weight: bold;
+}
+
+.closer-componant .content .blur .container .down .card::after {
+    content: "";
+    position: absolute;
+    top: -10%;
+    right: -4%;
+    width: 30px;
+    height: 30px;
+    border-radius:50%;
+    background-color: #f57e5a;
+}
+
+
+
+@media (max-width:999px) {
+
+    .bablic {
+        /* min-height: 100%; */
+        
+        margin-bottom: 30px;
+        position: relative;
+        min-height: 60vh;
+        /* margin: 30px 0; */
+    }
+    .closer-componant .content {
+        height: 50%;
+        width: 100%;
+        /* background: url("./public/images/property-02.jpg"); */
+        background-repeat: no-repeat;
+        /* background-position: center; */
+        background-size: cover;
+        background-position: center;
+        
+    }
+    .closer-componant .content .blur {
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(8px);
+        /* position: relative; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .closer-componant .content .blur .container {
+        width: 85%;
+        /* position: absolute; */
+        /* height: 100vh; */
+        /* top: 40px;
+        left: 50%; */
+        /* transform: translateX(-50%); */
+    }
+    .closer-componant .content .blur .container .center {
+        width: 100%;
+        height: 100%;
+    }
+    .closer-componant .content .blur .container .center img {
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .closer-componant .content .blur .container .down {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        /* justify-content: space-evenly; */
+        /* height: auto; */
+        /* align-items: center; */
+    }
+    .closer-componant .content .blur .container .down .card {
+        position: relative;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(250, 143, 111, 0.4);
+        padding: 20px;
+    }
+}
+
+
+@media (max-width:767px) {
+    .bablic {
+        /* min-height: 100%; */
+        
+        margin-bottom: 30px;
+        position: relative;
+        min-height: auto;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin: 30px 0; */
+    }
+    .closer-componant {
+        width: 100%;
+        height: 200%;
+    }
+    .closer-componant .content {
+        height: 100% !important;
+        width: 100%;
+        /* background: url("./public/images/property-02.jpg"); */
+        background-repeat: no-repeat;
+        /* background-position: center; */
+        background-size: cover;
+        background-position: center;
+        
+    }
+    .closer-componant .content .blur {
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(8px);
+        /* position: relative; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .closer-componant .content .blur .container {
+        padding: 0 !important;
+        width: 100%;
+        /* position: absolute; */
+        /* height: 100vh; */
+        /* top: 40px;
+        left: 50%; */
+        /* transform: translateX(-50%); */
+    }
+    .closer-componant .content .blur .container .center {
+        width: 100%;
+        height: 100%;
+    }
+    .closer-componant .content .blur .container .center img {
+        width: 80% !important;
+        height: 300px;
+        border-radius: 10px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .closer-componant .content .blur .container .down {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr ;
+        /* column-gap: 20px; */
+        row-gap: 20px;
+        justify-content: space-evenly;
+        /* height: auto; */
+        align-items: center;
+        height: auto;
+        margin-top: 20px;
+
+    }
+    .closer-componant .content .blur .container .down .card {
+        position: relative;
+        display: flex;
+        width: 60%;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(250, 143, 111, 0.4);
+        padding: 20px;
+        margin: auto;
+    }
+    .closer-componant .content {
+        height: 50vh;
+        width: 100%;
+        /* background: url("../../../public/images/property-02.jpg"); */
+        background-repeat: no-repeat;
+        /* background-position: center; */
+        background-size: cover;
+        
+    }
+    .closer-componant .content .blur .container .center {
+        position: relative;
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .closer-componant .content .blur .container .center img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        
+        /* position: relative; */
+    }
+    .closer-componant .content .blur .container .center .play {
+        /* position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%); */
+        background-color: rgba(245, 126, 90,0.4);
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg {
+            cursor: pointer;
+            color: #fff;
+        }
+    }
+}

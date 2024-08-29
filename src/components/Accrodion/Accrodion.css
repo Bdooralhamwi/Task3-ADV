@@ -1,0 +1,35 @@
+.accordion {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 10px 0;
+    user-select: none;
+    transition: .3s;
+  }
+  
+  .accordion-header {
+    /* background-color: #f7f7f7; */
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .3s;
+  }
+  
+  .accordion-header h3 {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .accordion-header span {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .accordion-content {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    /* background-color: #fff; */
+    transition: .3s !important;
+  }
+  

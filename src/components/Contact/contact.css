@@ -1,0 +1,198 @@
+.contact-componant {
+    width: 100%;
+    /* padding-bottom: 20px; */
+    /* height: auto; */
+    /* height: 115vh; */
+
+}
+
+.contact-componant .back {
+    height: 60% !important;
+}
+
+.contact-componant h1 {
+    color:#f35525 ;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-componant .container  h2 {
+    color: #fff;
+    font-size: 29px;
+    margin-bottom: 70px;
+}
+.contact-componant .container p {
+    line-height: 150%;
+}
+
+.contact-componant .container {
+    padding-top: 100px;
+    background-size: cover;
+    background-position: center;
+    /* height: 490px; */
+    width: 100%;
+}
+
+ .back {
+    z-index: -1;
+ }
+ 
+
+
+.contact-componant .container .content {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    width: 100%;
+
+    
+
+    
+}
+.contact-componant .container .content .left {
+    width: 80%;
+}
+      
+.contact-componant .container .content  .contact-option  {
+
+    display: flex; 
+    justify-content: space-between;
+    width: 100%;
+margin-top: 30px;
+margin-bottom: 20px;
+      
+    }
+
+.contact-option-left , .contact-option-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 48%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    backdrop-filter: blur(10px);
+    color: #fff;
+    padding: 20px 10px;
+    img {
+        width: 30px;
+        height: 25px;
+        margin-right: 20px !important;
+    }.title span {
+        font-weight: bold;
+        color: #000;
+    }
+    p {
+        font-size: 13px;
+        color: #000;
+    }
+}
+.contact-componant .container .content .right {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 80%;
+
+    /* height: ; */
+    background-color: #fff;
+    padding-top: 5px;
+    border-radius: 10px;
+    form {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        span {
+            font-weight: bold;
+            color: balck;
+            margin-bottom: 15px;
+        }
+        input {
+            background-color: #eee;
+            outline: none;
+            border: none;
+            padding: 10px;
+            border-radius: 20px;
+            margin-bottom: 15px;
+        }
+        textarea {
+            background-color: #eee;
+            padding: 10px;
+        
+            outline: none;
+            border-radius: 20px;
+            height: 120px;
+            border: none;
+            margin-bottom: 25px;
+        }
+        .submit {
+            font-weight: bold;
+            cursor: pointer;
+            transition: .3s;
+            width: fit-content;
+            background-color: #000;
+            color: white;
+            margin-bottom: 0;
+        }.submit:hover {
+            background-color: #aa111165;
+            color: #000;
+        }
+    }
+
+}
+
+@media (max-width:999px) {
+    .contact-componant .container .content {
+        grid-template-columns: 70% 60%;
+        justify-content: space-between;
+        margin: 0;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .contact-componant .back {
+        height: 60% !important;
+        background-position: center;
+        background-size: cover;
+    }
+    .contact-componant .container .content .left {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+
+        .contact-option {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-top: 20px;
+            div {
+                width: 100%;
+            }
+        }
+        
+    }
+    .contact-componant .container .content .right {
+        width: 70%;
+    }
+}
+
+
+@media (max-width:767px) {
+    .contact-componant .container .content {
+        grid-template-columns: 100%;
+        row-gap: 20px;
+    }
+    .contact-componant .container .content .left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .contact-option {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 20px;
+            gap: 10px;
+        }
+    }
+    .contact-componant .container .content .right {
+        width: 100%;
+    }
+}
+

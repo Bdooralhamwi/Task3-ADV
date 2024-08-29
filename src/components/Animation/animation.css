@@ -1,0 +1,118 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.loder {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  
+  background-color: rgb(22, 22, 22);
+  z-index: 1000000;
+  color: white;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  
+}
+.loder b {
+  color: #737373;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 140px;
+
+
+}
+
+.loder .ring {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+border-radius: 50%;
+
+
+animation: ring 2s linear infinite;
+text-align: center;
+
+
+}
+@keyframes ring {
+  0%{
+    transform: rotate(0deg);
+    box-shadow: 1px 5px 2px #e65c00;
+  }
+  50%{
+    transform: rotate(180deg);
+    box-shadow: 1px 5px 2px #18b201;
+  }
+  100%{
+    transform: rotate(360deg);
+    box-shadow: 1px 5px 2px #0456c8;
+  }
+ 
+  
+}
+.ring::before{
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  
+} 
+
+
+
+
+h5{
+  margin-top: -150px;
+  position: relative;
+  letter-spacing: 15px;
+  color: #0456c8;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
+  line-height: 0.7em;
+  outline: none;
+  animation: aninmate 5s linear infinite;
+  font-size: 50px;
+  
+}
+@keyframes aninmate  {
+  0%{
+    color: #0456c8; ;
+    box-shadow: none;
+  }
+  100%{
+    color: #fff; ;
+    text-shadow: 0 0 10px #03bcf4,    
+                  0 0 20px #03bcf4,   
+                  0 0 40px #03bcf4,
+                  0 0 80px #03bcf4,
+                  0 0 160px #03bcf4,   ;
+                   
+                    
+  }
+  
+}
+@media(max-width:800px){
+  h5{
+    font-size: 20px;
+  }
+
+}
+
+
+
+

@@ -1,0 +1,460 @@
+
+.Beast-componant {
+    background-color: #eee;
+    width: 100%;
+    padding-top:20px ;
+    /* height: 100vh; */
+    /* margin-top: 200px; */
+    /* min-height: 550px; */
+}
+.Beast-componant .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.Beast-componant .content .up {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    /* height: 150px; */
+    align-items: center;
+    padding: 10px 0;
+}
+.Beast-componant .content .up .title {
+    width: 200px;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Beast-componant .content .up .title h1 {
+    color: #f35525;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.Beast-componant .content .up .title h2 {
+    font-size: 25px;
+}
+.Beast-componant .content .up .btn {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.Beast-componant .content .up .btn button {
+    padding: 15px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.Beast-componant .content .up .btn .active {
+    background-color: #fa7147;
+}
+
+.Beast-componant .content .down {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 50px;
+    align-items: flex-start;
+    background-color: #eee;
+
+
+}
+.Beast-componant .content .down .left {
+    width: 20%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.Beast-componant .content .down .left .column {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 20px 10px;
+    border-bottom: solid 1px #eee;
+}
+.Beast-componant .content .down .left .column p {
+    color: #c0c0c0;
+}
+.Beast-componant .content .down .left .column h4 {
+    font-weight: bolder;
+    font-size: 18px;
+}
+.Beast-componant .content .down .left .last {
+    border: none;
+}
+.Beast-componant .content .down .center-photo {
+    width: 33%;
+}
+.Beast-componant .content .down .center-photo img {
+    width: 100%;
+}
+
+.Beast-componant .content .down .right {
+    /* text-align: center; */
+    width: 25%;
+    height: auto;
+    /* border: solid 1px red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.Beast-componant .content .down .right h2 {
+    margin-bottom: 25px;
+
+}
+
+.Beast-componant .content .down .right .center-right  {
+    width: 100%;
+    /* letter-spacing: 2px; */
+}
+.Beast-componant .content .down .right .center-right p  {
+    line-height: 2;
+}
+
+.Beast-componant .content .down .right .down-right {
+    width: 100%;
+}
+.Beast-componant .content .down .right .down-right button {
+    margin: auto;
+    display: flex;
+    width: 170px;
+    /* padding:0px 10px; */
+    padding-right: 10px;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #000;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.Beast-componant .content .down .right .down-right button a {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f35525;
+    border-radius: 50%;
+    margin-left: -2px;
+}
+
+
+
+
+
+
+
+@media (max-width:999px) {
+    .Beast-componant {
+        padding: 40px 0;
+        height: auto;
+    }
+    .Beast-componant .content .up {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+        /* height: 150px; */
+        /* align-items: center; */
+        padding-top: 10px;
+    }
+    .Beast-componant .content .up .title {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 10px;
+        text-align: center;
+        /* margin-bottom: 30px; */
+    }
+    .Beast-componant .content .up .title span {
+        color: #f35525;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .Beast-componant .content .up .title h2 {
+        font-size: 27px;
+    }
+    .Beast-componant .content .up .btn {
+        width: 80%;
+        /* height: 100%; */
+        padding: 0 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .Beast-componant .content .up .btn button {
+        padding: 10px;
+        background-color: black;
+        color: #fff;
+        border: none;
+        outline: none;
+        font-size: 17px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .Beast-componant .content .up .btn .active {
+        background-color: #fa7147;
+    }
+    
+.Beast-componant .content .down {
+    height: auto;
+    /* border: solid 1px red; */
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+    /* align-items: flex-start; */
+    margin-top: 10px;
+    background-color: #eee;
+    column-gap: 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    /* padding-left: 20px; */
+    column-gap: 30px;
+}
+.Beast-componant .content .down .left {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.Beast-componant .content .down .left .column {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 10px;
+    border-bottom: solid 1px #eee;
+}
+.Beast-componant .content .down .left .column p {
+    color: #c0c0c0;
+}
+.Beast-componant .content .down .left .column h4 {
+    font-weight: bolder;
+    font-size: 18px;
+}
+.Beast-componant .content .down .left .last {
+    border: none;
+}
+.Beast-componant .content .down .center-photo {
+    width: 100%;
+    /* margin: 20px 0; */
+    margin: 0;
+}
+.Beast-componant .content .down .center-photo img {
+    width: 100%;
+}
+
+.Beast-componant .content .down .right {
+    text-align: center;
+    margin-top: 50px;
+    width: 300%;
+    height: auto;
+    /* border: solid 1px red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.Beast-componant .content .down .right .center-right  {
+    width: 100%;
+    padding: 20px 0;
+    /* letter-spacing: 2px; */
+}
+.Beast-componant .content .down .right .down-right button {
+    display: flex;
+    width: 170px;
+    /* padding:0px 10px; */
+    padding-right: 10px;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #000;
+    p {
+        font-weight: bold;
+    font-size: 15px;
+    }
+    cursor: pointer;
+}
+.Beast-componant .content .down .right .down-right button a {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fa764e;
+    border-radius: 50%;
+    margin-left: -2px;
+}
+}
+
+
+
+@media (max-width:767px) {
+    .Beast-componant {
+        padding: 10px 0;
+        /* height: 1300px; */
+        overflow: hidden;
+        height: auto;
+    }
+    .Beast-componant .content .up {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+        /* height: 150px; */
+        /* align-items: center; */
+        padding-top: 10px;
+    }
+    .Beast-componant .content .up .title {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 10px;
+        text-align: center;
+        /* margin-bottom: 30px; */
+    }
+    .Beast-componant .content .up .title span {
+        color: #f35525;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .Beast-componant .content .up .title h2 {
+        font-size: 27px;
+    }
+    .Beast-componant .content .up .btn {
+        width: 80%;
+        /* height: 100%; */
+        /* height: 400px; */
+        flex-wrap: wrap;
+        padding: 0 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+    .Beast-componant .content .up .btn button {
+        padding: 10px;
+        background-color: black;
+        color: #fff;
+        border: none;
+        outline: none;
+        font-size: 17px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .Beast-componant .content .up .btn .active {
+        background-color: #fa7147;
+    }
+    
+.Beast-componant .content .down {
+    width: 100%;
+    /* height: 60vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px 50px;
+    align-items: flex-start;
+    margin-top: 10px;
+    background-color: #eee;
+
+}
+.Beast-componant .content .down .left {
+    width: 100%;
+    height: 89%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.Beast-componant .content .down .left .column {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 20px 10px;
+    border-bottom: solid 1px #eee;
+}
+.Beast-componant .content .down .left .column p {
+    color: #c0c0c0;
+}
+.Beast-componant .content .down .left .column h4 {
+    font-weight: bolder;
+    font-size: 18px;
+}
+.Beast-componant .content .down .left .last {
+    border: none;
+}
+.Beast-componant .content .down .center-photo {
+    width: 100%;
+    margin: 20px 0;
+}
+.Beast-componant .content .down .center-photo img {
+    width: 100%;
+}
+
+.Beast-componant .content .down .right {
+    width: 100%;
+    height: 92%;
+    /* border: solid 1px red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.Beast-componant .content .down .right .center-right  {
+    width: 100%;
+    padding: 20px 0;
+    /* letter-spacing: 2px; */
+}
+.Beast-componant .content .down .right .down-right button {
+    display: flex;
+    width: 170px;
+    /* padding:0px 10px; */
+    padding-right: 10px;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #000;
+    p {
+        font-weight: bold;
+    font-size: 15px;
+    }
+    cursor: pointer;
+}
+.Beast-componant .content .down .right .down-right button a {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fa764e;
+    border-radius: 50%;
+    margin-left: -2px;
+}
+}

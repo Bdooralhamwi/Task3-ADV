@@ -1,0 +1,33 @@
+.btn-properties {
+    width: 50%;
+    margin: auto;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.btn-properties button {
+    padding: 14px ;
+    
+    border: none;
+    background-color: black;
+    color: #fff;
+    margin: 10px;
+}
+.btn-properties button:hover {
+    cursor: pointer;
+}
+.active {
+    padding: 14px 20px !important;
+    background-color: #f35525 !important;
+}
+@media (max-width:999px) {
+    .btn-properties {
+        width: 80% !important;
+    }
+}
+@media (max-width:767px) {
+    .btn-properties {
+        width: 70% !important;
+    }
+}

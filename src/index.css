@@ -1,0 +1,48 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: solid 1px red; */
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: solid 1px red; */
+}
+
+.container {
+  /* max-width: 1300px; */
+  margin-inline: auto;
+  padding-inline: 100px;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.APP {
+  overflow-y: hidden;
+  overflow-x: visible;
+}
+.swiper-pagination {
+  text-align: left !important;
+  padding-left: 200px;
+}
+.swiper-pagination-bullet {
+  background: #fff !important;
+  opacity: 1;
+  transform: translateX();
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #f35525 !important;
+}
+.leaflet-container {
+  height: 400px;
+}
